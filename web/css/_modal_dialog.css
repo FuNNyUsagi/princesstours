@@ -1,0 +1,101 @@
+.popup-fade {
+    display: none;
+}
+
+.popup-fade:before {
+    content: '';
+    background: #000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    z-index: 9999;
+}
+
+.popup {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    padding: 20px;
+    width: auto;
+    min-width: 480px;
+    max-width: 1000px;
+    margin-left: -200px;
+    background: #fff;
+    border: 1px solid orange;
+    border-radius: 4px;
+    z-index: 99999;
+    opacity: 1;
+}
+
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    background:
+        linear-gradient(45deg, transparent calc(50% - 1px), #000000 calc(50% - 1px), #000000 calc(50% + 1px), transparent calc(50% + 1px)),
+        linear-gradient(-45deg, transparent calc(50% - 1px), #000000 calc(50% - 1px), #000000 calc(50% + 1px), transparent calc(50% + 1px));
+    opacity: 0.3;
+}
+
+.popup-close:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.popup_label {
+    width: 90%;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    color: #333333;
+    margin-bottom: 30px;
+}
+
+.popup_main-block button {
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    color: #333333;
+    border-radius: 8px;
+    border: 1px solid #CACACD;
+    position: relative;
+    padding: 10px 50px;
+    text-decoration: none;
+    margin: 0 0 10px;
+}
+
+.popup_main-block button:hover {
+    cursor: pointer;
+}
+
+.popup_info {
+    display: none;
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    border-radius: 8px;
+    padding: 10px 30px;
+    margin: 0 0 10px;
+    width: 100%;
+}
+
+.popup_error {
+    background-color: #fce4e4;
+    border: 1px solid #fcc2c3;
+}
+
+.popup_success {
+    background-color: #EFE;
+    border: 1px solid #DED;
+}

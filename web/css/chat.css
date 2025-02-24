@@ -1,0 +1,83 @@
+.operator_block {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    border-bottom: #ddd 1px solid;
+}
+
+.operator_block-location {
+    flex: 0 0 20%;
+    position: relative;
+}
+
+.operator_block-location label {
+    width: 100%;
+    padding: 5px 40px;
+}
+
+.operator_block-sort {
+    flex: 0 0 80%;
+    text-align: right;
+    padding-left: 40px;
+}
+
+.operator_block-sort select {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #CACACD;
+    padding: 8px 10px;
+}
+
+.no_scroll{
+    overflow: hidden;
+}
+
+.new_msg_operator {
+    animation: new_msg_operator 2s infinite;
+}
+.new_message:hover {
+    animation: none;
+}
+@keyframes new_msg_operator {
+    0% { box-shadow: 0 0 5px 2px red;}
+    50% { box-shadow: none;}
+    100% { box-shadow: 0 0 5px 2px red;}
+}
+
+.body_messages {
+    max-height: 500px;
+    overflow-y: auto;
+    overflow-x: visible;
+    scrollbar-width: thin;
+    scrollbar-color: #9610ff #cacacd;
+}
+
+.body_messages::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+}
+.body_messages::-webkit-scrollbar-track {
+    background: #cacacd;
+}
+.body_messages::-webkit-scrollbar-thumb {
+    background-color: #9610ff;
+    border-radius: 5px;
+    border: 3px solid #cacacd;
+}
+
+.close_search {
+    display: none;
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    width: 13px;
+    height: 13px;
+    background: linear-gradient(45deg, transparent calc(50% - 1px), #000000 calc(50% - 1px), #000000 calc(50% + 1px), transparent calc(50% + 1px)),
+    linear-gradient(-45deg, transparent calc(50% - 1px), #000000 calc(50% - 1px), #000000 calc(50% + 1px), transparent calc(50% + 1px));
+    opacity: 0.3;
+}
+
+.close_search:hover {
+    cursor: pointer;
+    opacity: 1;
+}

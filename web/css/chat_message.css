@@ -1,0 +1,204 @@
+.msg_list-empty {
+    color: #CACACD;
+    text-align: center;
+}
+
+.load_messages {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    display: none;
+}
+
+.load_messages span {
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+}
+
+.messager-message-typing {
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    display: none;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 14px;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+    color: #a9a9a9;
+    margin-right: 5px;
+}
+
+.fa-check::before {
+    background-image: url("/img/check.png");
+    background-size: 10px 10px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    content: "";
+}
+
+.fa-double-check::before {
+    background-image: url("/img/double-check.png");
+    background-size: 10px 10px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    content: "";
+}
+
+.sticker {
+    margin: 0 auto;
+    width: 130px;
+    height: 130px;
+    background-position: 0 0;
+    background-repeat: repeat-x;
+}
+
+.telegram_stikers_block {
+    position: absolute;
+    top: 0;
+    right: -320px;
+    min-width: 320px;
+    max-width: 320px;
+    height: 100%;
+    background: #fff;
+    z-index: 10;
+    transition: all .2s linear;
+    overflow: auto;
+}
+
+.telegram_stikers_block.active {
+    right: 0px;
+}
+
+.telegram_stikers_block_head {
+    min-height: 60px;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    align-items: center;
+    -webkit-align-items: center;
+    padding: 0px 16px;
+}
+
+.telegram_stikers_block_head div {
+    background: transparent;
+    color: #ddd;
+    padding: 0;
+    border: 0;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.telegram_stikers_block_head div img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.5;
+}
+
+.telegram_stikers_block_head div img:hover {
+    opacity: 1;
+}
+
+.telegram_stikers_block_nav {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 16px;
+}
+
+.telegram_stikers_block_list {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    padding: 16px;
+    width: 320px;
+    justify-content: center;
+}
+
+.telegram_stikers_block_list span {
+    display: block;
+    width: 62px;
+    height: 62px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.telegram_stikers_block_list span img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.telegram_stikers_block_nav_item {
+    cursor: pointer;
+}
+
+.telegram_stikers_block_nav_item span {
+    display: block;
+    margin: 0px 5px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.telegram_stikers_block_nav_item span img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.select_dir_stikers {
+    width: 100%;
+    text-align: center;
+}
+
+.m_img_wap img {
+    width: 150px;
+    height: 150px;
+}
+
+.messager-img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    border-top: 1px solid #DDD;
+}
+
+.messager-img_item {
+    padding: 5px;
+    margin: 5px 0 5px 10px;
+    position: relative;
+}
+
+.messager-img_item img {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 8px;
+    border: 1px solid #DDD;
+}
+
+.upload_img {
+    background-image: url('/img/loading-snake-io.gif');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.upload_img img {
+    opacity: 0.3;
+}

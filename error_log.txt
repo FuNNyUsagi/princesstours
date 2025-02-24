@@ -1,0 +1,8 @@
+DATE: 15.04.2024 14:40:15
+Attempt: Failed
+Log: TEST_NA_PIDORA2
+-------------------------
+DATE: 15.04.2024 14:40:16
+Attempt: Failed
+Log: TEST_NA_PIDORA2
+-------------------------
