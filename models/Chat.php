@@ -7,7 +7,7 @@ use yii\base\Model;
 use yii\base\Exception;
 
 /**
- * Простоая форма для работы с чатом посредством хранимых процедур, а не ебучих ActiveRecord
+ * Простоая форма для работы с чатом посредством хранимых процедур, а не ActiveRecord
  */
 class Chat extends Model
 {
